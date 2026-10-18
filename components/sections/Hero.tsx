@@ -14,16 +14,16 @@ export default function Hero() {
     <section className="dental-hero" aria-labelledby="hero-heading">
       <div className="hero-inner">
         <h1 id="hero-heading" className="hero-heading">
-          <span>Your smile.</span>
-          <span className="hero-accent">Our care.</span>
+          <span>Buzëqeshja juaj.</span>
+          <span className="hero-accent">Kujdesi ynë.</span>
         </h1>
         <div className="hero-photo">
-          <Image src="/images/hero.jpg" alt="Bright modern dental clinic with a dental chair and treatment equipment" fill priority sizes="100vw" className="object-cover" />
+          <Image src="/images/hero.jpg" alt="Ambient dentar ilustrues për prezantimin e klinikës" fill priority sizes="100vw" className="object-cover" />
         </div>
-        <p className="hero-description">Modern dentistry, made personal.</p>
+        <p className="hero-description">ChARM Dental & Aesthetic · Tiranë</p>
         <div className="hero-actions">
-          <Link href="/contact" className="hero-book">Book a Visit <Arrow className="hero-book-arrow" /></Link>
-          <Link href="/services" className="hero-services">Our Services <Arrow /></Link>
+          <Link href="/contact" className="hero-book">Rezervo një vizitë <Arrow className="hero-book-arrow" /></Link>
+          <Link href="/services" className="hero-services">Shërbimet <Arrow /></Link>
         </div>
       </div>
     </section>

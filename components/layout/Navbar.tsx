@@ -21,7 +21,7 @@ export default function Navbar() {
                 <path d="M24 10C17 3 7 6 7 16c0 8 5 19 9 23 3 3 3-13 8-13s5 16 8 13c4-4 9-15 9-23C41 6 31 3 24 10Z" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
-            <span>{siteConfig.name}</span>
+            <span className="charm-wordmark">ChARM<small>DENTAL &amp; AESTHETIC</small></span>
           </Link>
           <nav className="hidden lg:flex items-center gap-7 xl:gap-10" aria-label="Main navigation">
             {mainNav.map((item) => (
@@ -30,7 +30,7 @@ export default function Navbar() {
               </Link>
             ))}
           </nav>
-          <Link href="/contact" className="nav-book hidden lg:inline-flex">Book Visit</Link>
+          <Link href="/contact" className="nav-book hidden lg:inline-flex">Rezervo vizitë</Link>
           <button className="lg:hidden p-2 -mr-2" onClick={() => setMenuOpen(true)} aria-label="Open menu" aria-expanded={menuOpen}>
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" aria-hidden="true">
               <path strokeLinecap="round" d="M3 5h18M3 12h18M3 19h18" />

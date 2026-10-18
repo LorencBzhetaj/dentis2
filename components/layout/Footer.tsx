@@ -39,9 +39,9 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Lidhje të shpejta */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Quick Links</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Lidhje të shpejta</h3>
             <ul className="space-y-2.5">
               {footerNav.quickLinks.map((link) => (
                 <li key={link.href}>
@@ -53,7 +53,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Services</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Informacion</h3>
             <ul className="space-y-2.5">
               {footerNav.services.map((link) => (
                 <li key={link.href}>
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Contact</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Kontakt</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex gap-2 items-start">
                 <svg className="w-4 h-4 mt-0.5 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,9 +77,7 @@ export default function Footer() {
               <li>
                 <a href={`tel:${siteConfig.phone}`} className="hover:text-teal-400 transition-colors">{siteConfig.phone}</a>
               </li>
-              <li>
-                <a href={`mailto:${siteConfig.email}`} className="hover:text-teal-400 transition-colors">{siteConfig.email}</a>
-              </li>
+              
               <li className="pt-2 text-xs leading-relaxed border-t border-slate-700">
                 <p>{siteConfig.hours.weekdays}</p>
                 <p>{siteConfig.hours.saturday}</p>
@@ -90,7 +88,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
-          <p>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {siteConfig.name}. Të gjitha të drejtat e rezervuara.</p>
           <div className="flex gap-4">
             {footerNav.legal.map((link) => (
               <Link key={link.href} href={link.href} className="hover:text-teal-400 transition-colors">{link.label}</Link>

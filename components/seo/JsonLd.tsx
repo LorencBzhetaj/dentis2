@@ -16,18 +16,18 @@ export default function JsonLd({ type = "dental", data }: JsonLdProps) {
       description: siteConfig.description,
       url: siteConfig.url,
       telephone: siteConfig.phone,
-      email: siteConfig.email,
+      hasMap: siteConfig.mapsUrl,
       address: {
         "@type": "PostalAddress",
         streetAddress: siteConfig.address.street,
         addressLocality: siteConfig.address.city,
-        addressCountry: "XK",
+        addressCountry: "AL",
       },
-      openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-15:00"],
+      openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-14:00"],
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "500",
+        ratingValue: "5",
+        reviewCount: "10",
         bestRating: "5",
       },
     };

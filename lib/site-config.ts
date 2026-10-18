@@ -1,30 +1,14 @@
+// Public business details verified on Google Maps, 18 October 2026.
 export const siteConfig = {
-  name: "DentaCare",
-  tagline: "Advanced Dental Care Designed Around You",
-  description:
-    "Premium dental clinic offering implants, veneers, whitening, orthodontics, and general dentistry. Trusted by 8,000+ patients.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://dentacare.com",
-  phone: "+383 44 123 456",
-  email: "info@dentacare.com",
-  address: {
-    street: "Dr. Ditan Hoxha, Prishtina 10000",
-    city: "Prishtina",
-    country: "Kosovo",
-  },
-  hours: {
-    weekdays: "Mon – Fri: 09:00 – 19:00",
-    saturday: "Saturday: 09:00 – 15:00",
-    sunday: "Sunday: Closed",
-  },
-  social: {
-    facebook: "https://facebook.com/dentacare",
-    instagram: "https://instagram.com/dentacare",
-    linkedin: "https://linkedin.com/company/dentacare",
-  },
-  stats: [
-    { value: "15+", label: "Years of Experience" },
-    { value: "8K+", label: "Happy Patients" },
-    { value: "4.9/5", label: "Google Rating" },
-    { value: "98%", label: "Patient Satisfaction" },
-  ],
+  name: "ChARM Dental & Aesthetic",
+  tagline: "Klinikë dentare në Tiranë",
+  description: "ChARM Dental & Aesthetic në Rezidencën Golden Tower, Rruga Mine Peza, Tiranë. Na telefononi për informacion dhe rezervime.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : 'http://localhost:3000'),
+  phone: "+355 68 449 4444",
+  email: "",
+  mapsUrl: "https://www.google.com/maps?cid=3984942484956250472",
+  address: { street: "Rezidenca Golden Tower, Rruga Mine Peza, Tiranë 1002", city: "Tiranë", country: "Shqipëri" },
+  hours: { weekdays: "E hënë – E premte: 09:00 – 19:00", saturday: "E shtunë: 09:00 – 14:00", sunday: "E diel: Mbyllur" },
+  social: {} as Record<string, string>,
+  stats: [ { value: "5.0/5", label: "Vlerësimi në Google" }, { value: "10", label: "Komente në Google" }, { value: "Tiranë", label: "Golden Tower" }, { value: "09–19", label: "E hënë – E premte" } ],
 } as const;

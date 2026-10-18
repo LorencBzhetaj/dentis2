@@ -1,0 +1,3 @@
+import Container from "@/components/ui/Container";
+import Link from "next/link";
+export default function ClinicInfoPage({title, description}: {title: string; description: string}) { return <section className="pt-36 pb-24 bg-[#f8fafb] min-h-[65vh]"><Container><p className="text-teal-600 uppercase tracking-widest text-sm mb-4">ChARM Dental & Aesthetic · Tiranë</p><h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6">{title}</h1><p className="max-w-2xl text-lg text-slate-500 leading-relaxed mb-8">{description}</p><Link href="/contact" className="inline-flex bg-teal-600 text-white px-7 py-3 rounded-full">Kontakto klinikën →</Link></Container></section>; }

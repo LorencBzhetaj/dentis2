@@ -33,6 +33,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           "fixed top-0 right-0 h-full w-80 max-w-[90vw] bg-white z-50 shadow-2xl transition-transform duration-300",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
+        inert={!isOpen}
+        aria-hidden={!isOpen}
         role="dialog"
         aria-modal="true"
         aria-label="Navigation menu"
@@ -64,7 +66,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <div className="absolute bottom-0 left-0 right-0 p-5 border-t border-slate-100 space-y-3">
           <p className="text-sm text-slate-500">{siteConfig.phone}</p>
           <Link href="/contact" onClick={onClose} className="flex items-center justify-center w-full bg-teal-600 text-white font-medium py-3 rounded-full hover:bg-teal-700 transition-colors text-sm">
-            Book a Visit
+            Rezervo një vizitë
           </Link>
         </div>
       </div>
