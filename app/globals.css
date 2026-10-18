@@ -34,3 +34,48 @@ body {
     box-sizing: border-box;
   }
 }
+
+/* Demo clinic hero: separate mobile composition, full-bleed desktop image. */
+.dental-header { height: 74px; color: #102e45; }
+.dental-nav { max-width: 1536px; margin: 0 auto; padding: 0 5.8%; height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.dental-logo { display: inline-flex; align-items: center; gap: 8px; font-size: 27px; font-weight: 650; letter-spacing: -1.1px; white-space: nowrap; }
+.dental-logo-icon { color: #099e9e; width: 44px; height: 44px; }
+.dental-logo-icon svg { width: 100%; height: 100%; }
+.dental-nav-link { font-size: 14px; padding: 12px 0; position: relative; white-space: nowrap; transition: color .2s; }
+.dental-nav-link:hover, .dental-nav-link.is-active { color: #009b9b; }
+.dental-nav-link.is-active::after { content: ''; position: absolute; bottom: 3px; left: 0; right: 0; height: 2px; background: #009b9b; }
+.nav-book { align-items: center; justify-content: center; background: #009b9b; color: white; padding: 13px 28px; border-radius: 16px; font-size: 14px; white-space: nowrap; }
+.dental-hero { position: relative; margin-top: 74px; min-height: min(950px, calc(100svh - 74px)); display: flex; align-items: center; color: #102e45; background: #fafaf7; isolation: isolate; }
+.hero-inner { width: 100%; max-width: 1536px; margin: 0 auto; padding: 100px 5.8%; }
+.hero-heading { position: relative; z-index: 1; font-size: clamp(70px, 7.3vw, 112px); font-weight: 750; letter-spacing: -.055em; line-height: .98; }
+.hero-heading span { display: block; }
+.hero-accent { color: #009b9b; margin-top: 5px; }
+.hero-photo { position: absolute; inset: 0; z-index: -2; }
+.hero-photo img { object-position: center; }
+.dental-hero::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(255,255,252,.96) 0%, rgba(255,255,252,.83) 26%, rgba(255,255,252,.24) 52%, transparent 73%); }
+.hero-description { margin-top: 28px; font-size: clamp(22px, 2.1vw, 32px); letter-spacing: .055em; position: relative; }
+.hero-actions { display: flex; align-items: center; gap: 35px; margin-top: 30px; }
+.hero-book { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: #009b9b; color: white; padding: 18px 40px; border-radius: 24px; font-size: 22px; font-weight: 550; transition: background .2s; }
+.hero-book:hover, .nav-book:hover { background: #007f80; }
+.hero-book-arrow { display: none; }
+.hero-services { display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 500; }
+.hero-services:hover { color: #009b9b; }
+.dental-logo:focus-visible, .dental-nav-link:focus-visible, .hero-actions a:focus-visible, .nav-book:focus-visible { outline: 3px solid #009b9b; outline-offset: 6px; }
+@media (max-width: 1023px) {
+  .dental-header { height: 86px; color: #081b2b; }
+  .dental-nav { padding: 0 6%; }
+  .dental-logo { gap: 10px; font-size: 25px; letter-spacing: -.8px; }
+  .dental-logo-icon { width: 40px; height: 40px; border-radius: 11px; padding: 5px; background: #0b9c99; color: white; }
+  .dental-hero { display: block; margin-top: 86px; min-height: auto; background: white; color: #081b2b; }
+  .dental-hero::after { display: none; }
+  .hero-inner { padding: 39px 3.7% 46px; display: flex; flex-direction: column; }
+  .hero-heading { font-size: clamp(44px, 11.6vw, 100px); line-height: 1.04; letter-spacing: -.055em; margin: 0 2.2% 30px; }
+  .hero-accent { margin-top: 1px; }
+  .hero-photo { position: relative; inset: auto; z-index: auto; width: 100%; aspect-ratio: 1.28; overflow: hidden; border-radius: 18px; }
+  .hero-photo img { object-position: 48% center; }
+  .hero-description { margin: 23px 2.2% 0; font-size: clamp(15px, 4.15vw, 35px); font-weight: 500; letter-spacing: -.035em; white-space: nowrap; }
+  .hero-actions { flex-direction: column; gap: 22px; margin-top: 26px; }
+  .hero-book { width: 100%; padding: 17px 20px; border-radius: 13px; font-size: 20px; background: #0c9b97; }
+  .hero-book-arrow { display: block; }
+  .hero-services { font-size: 17px; gap: 9px; }
+}
