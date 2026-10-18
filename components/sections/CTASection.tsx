@@ -13,7 +13,7 @@ interface CTASectionProps {
 
 export default function CTASection({
   title = "Buzëqeshja juaj fillon këtu.",
-  subtitle = "Kontaktoni ChARM Dental & Aesthetic për të caktuar vizitën tuaj në Tiranë.",
+  subtitle = "Kontaktoni Goga Dent për të caktuar vizitën tuaj në Tiranë.",
   primaryLabel = "Rezervo një vizitë",
   primaryHref = "/contact",
 }: CTASectionProps) {

@@ -21,7 +21,7 @@ export default function Navbar() {
                 <path d="M24 10C17 3 7 6 7 16c0 8 5 19 9 23 3 3 3-13 8-13s5 16 8 13c4-4 9-15 9-23C41 6 31 3 24 10Z" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
-            <span className="charm-wordmark">ChARM<small>DENTAL &amp; AESTHETIC</small></span>
+            <span className="charm-wordmark">Goga Dent<small>KLINIKË DENTARE</small></span>
           </Link>
           <nav className="hidden lg:flex items-center gap-7 xl:gap-10" aria-label="Main navigation">
             {mainNav.map((item) => (

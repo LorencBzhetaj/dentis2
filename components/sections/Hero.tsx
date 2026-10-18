@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="hero-photo">
           <Image src="/images/hero.jpg" alt="Ambient dentar ilustrues për prezantimin e klinikës" fill priority sizes="100vw" className="object-cover" />
         </div>
-        <p className="hero-description">ChARM Dental & Aesthetic · Tiranë</p>
+        <p className="hero-description">Goga Dent · Tiranë</p>
         <div className="hero-actions">
           <Link href="/contact" className="hero-book">Rezervo një vizitë <Arrow className="hero-book-arrow" /></Link>
           <Link href="/services" className="hero-services">Shërbimet <Arrow /></Link>

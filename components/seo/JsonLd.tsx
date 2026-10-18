@@ -23,7 +23,7 @@ export default function JsonLd({ type = "dental", data }: JsonLdProps) {
         addressLocality: siteConfig.address.city,
         addressCountry: "AL",
       },
-      openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-14:00"],
+      openingHours: ["Mo-Fr 11:00-19:00", "Sa 09:00-13:00"],
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "5",

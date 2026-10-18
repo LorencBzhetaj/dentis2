@@ -1,14 +1,14 @@
 // Public business details verified on Google Maps, 18 October 2026.
 export const siteConfig = {
-  name: "ChARM Dental & Aesthetic",
+  name: "Goga Dent",
   tagline: "Klinikë dentare në Tiranë",
-  description: "ChARM Dental & Aesthetic në Rezidencën Golden Tower, Rruga Mine Peza, Tiranë. Na telefononi për informacion dhe rezervime.",
+  description: "Goga Dent në Rrugën Bardhyl, kati II, Tiranë. Na telefononi për informacion dhe rezervime.",
   url: process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : 'http://localhost:3000'),
-  phone: "+355 68 449 4444",
+  phone: "+355 69 999 3435",
   email: "",
-  mapsUrl: "https://www.google.com/maps?cid=3984942484956250472",
-  address: { street: "Rezidenca Golden Tower, Rruga Mine Peza, Tiranë 1002", city: "Tiranë", country: "Shqipëri" },
-  hours: { weekdays: "E hënë – E premte: 09:00 – 19:00", saturday: "E shtunë: 09:00 – 14:00", sunday: "E diel: Mbyllur" },
+  mapsUrl: "https://www.google.com/maps?cid=12954389081464335311",
+  address: { street: "Rruga Bardhyl, kati II, Tiranë 1001", city: "Tiranë", country: "Shqipëri" },
+  hours: { weekdays: "E hënë – E premte: 11:00 – 19:00", saturday: "E shtunë: 09:00 – 13:00", sunday: "E diel: Mbyllur" },
   social: {} as Record<string, string>,
-  stats: [ { value: "5.0/5", label: "Vlerësimi në Google" }, { value: "10", label: "Komente në Google" }, { value: "Tiranë", label: "Golden Tower" }, { value: "09–19", label: "E hënë – E premte" } ],
+  stats: [ { value: "5.0/5", label: "Vlerësimi në Google" }, { value: "10", label: "Komente në Google" }, { value: "Tiranë", label: "Rruga Bardhyl" }, { value: "11–19", label: "E hënë – E premte" } ],
 } as const;
